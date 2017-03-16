@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ValueBar">
+        <attr name="text_distance" format="dimension"/>
+        <attr name="baseColor" format="color" />
+        <attr name="labelText" format="string" />
+        <attr name="summary" format="string"/>
+    </declare-styleable>
+</resources>

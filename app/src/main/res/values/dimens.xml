@@ -1,0 +1,23 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="general_padding">5dp</dimen>
+    <dimen name="general_margin">5dp</dimen>
+
+
+    <dimen name="ted_picker_selected_image_height">90dp</dimen>
+    <dimen name="ted_picker_fab_elevation">8dp</dimen>
+    <dimen name="ted_picker_fab_size">60dp</dimen>
+    <dimen name="ted_picker_fab_press_translation_z">9dp</dimen>
+
+
+    <dimen name="ted_picker_camera_height">250dp</dimen>
+    <dimen name="text_value">15sp</dimen>
+    <dimen name="huge_text_size">30sp</dimen>
+    <dimen name="s_button_padding">5dp</dimen>
+    <dimen name="card_bottom_margin">10dp</dimen>
+    <dimen name="card_shadow_space">10dp</dimen>
+</resources>

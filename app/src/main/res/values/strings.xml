@@ -1,0 +1,84 @@
+<resources>
+    <string name="app_name">Diamond Manager</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="prompt_user_name">Username</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_order_details">OrderDetails</string>
+    <string name="place_holder">Place Holder</string>
+    <string name="order_id">Order Id</string>
+    <string name="customer_name">Customer Name</string>
+    <string name="title_activity_add_order">AddOrder</string>
+    <string name="date">Date</string>
+    <string name="due_date">Due Date</string>
+    <string name="remark">Remark</string>
+    <string name="worker">Karigar</string>
+    <string name="status">Status</string>
+    <string name="capture">Capture Image</string>
+    <string name="pick_image">Choose Image</string>
+    <string name="permission_denied">Please Provide Storage and Camera  Permissions</string>
+
+
+    <string name="order_received">Order Received</string>
+    <string name="worker_assigned">Karigar Assigned</string>
+    <string name="worker_received">Karigar Received</string>
+    <string name="ready">Ready</string>
+    <string name="client_delivered">Client Delivered</string>
+
+    <string name="order_received_short">Order\nReceived</string>
+    <string name="worker_assigned_short">Karigar\nAssigned</string>
+    <string name="worker_received_short">Karigar\nReceived</string>
+    <string name="ready_short">\nReady</string>
+    <string name="client_delivered_short">\nClient Delivered</string>
+
+    <string-array name="status">
+        <item>@string/order_received</item>
+        <item>@string/worker_assigned</item>
+        <item>@string/worker_received</item>
+        <item>@string/ready</item>
+        <item>@string/client_delivered</item>
+    </string-array>
+
+    <string name="progress_title">Processing..</string>
+
+    <string name="done">Done</string>
+
+
+    <string-array name="tab_titles">
+        <item>Camera</item>
+        <item>Gallery</item>
+    </string-array>
+
+
+    <string name="toolbar_title">Choice Image</string>
+    <string name="no_image">No Image</string>
+
+    <string name="selected_image">Selected Image</string>
+
+
+    <string name="max_count_msg">%1$d images selected already</string>
+    <string name="min_count_msg">you have to choice %1$d images</string>
+
+    <string name="focusing">focusing/flash...wait a minute</string>
+
+
+    <string name="default_directory">Pictures</string>
+    <string name="title_activity_image_viewer">ImageViewerActivity</string>
+    <string name="title_activity_view_order">ViewOrder</string>
+    <string name="logout">Logout</string>
+    <string name="incorrect_password">Incorrect Username or Password</string>
+    <string name="title_activity_dashboard">Dashboard</string>
+    <string name="behind_schedule">Behind Schedule</string>
+    <string name="scheduled_today">Scheduled Today</string>
+    <string name="scheduled_tomorrow">Scheduled Tomorrow</string>
+    <string name="till_date">Work Done</string>
+    <string name="prompt_location">Location</string>
+</resources>
