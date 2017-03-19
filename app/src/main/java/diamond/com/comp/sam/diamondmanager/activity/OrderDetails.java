@@ -33,7 +33,7 @@ public class OrderDetails extends AppCompatActivity implements OnListFragmentInt
         setSupportActionBar(toolbar);
 
         mOrderFragment = OrderFragment.newInstance(1,getIntent().getExtras());
-        getFragmentManager().beginTransaction().add(R.id.data_layout, mOrderFragment).commit();
+        getSupportFragmentManager().beginTransaction().add(R.id.data_layout, mOrderFragment).commit();
         if(getIntent().getExtras()==null)
             Log.d("Here","Null");
 

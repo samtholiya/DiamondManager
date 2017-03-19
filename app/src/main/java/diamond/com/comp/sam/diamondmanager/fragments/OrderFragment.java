@@ -1,8 +1,8 @@
 package diamond.com.comp.sam.diamondmanager.fragments;
 
-import android.app.Fragment;
 import android.content.Context;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -36,6 +36,7 @@ import static diamond.com.comp.sam.diamondmanager.models.Orders.ORDER_DATE;
  * Activities containing this fragment MUST implement the {@link OnListFragmentInteractionListener}
  * interface.
  */
+
 public class OrderFragment extends Fragment implements OnDatabaseChanged {
 
     // TODO: Customize parameter argument names
@@ -95,8 +96,6 @@ public class OrderFragment extends Fragment implements OnDatabaseChanged {
             mOrderRecyclerViewAdapter = new OrderRecyclerViewAdapter(mListener);
             recyclerView.setAdapter(mOrderRecyclerViewAdapter);
             if (mColumnCount <= 1) {
-                Bundle bundle = getActivity().getIntent().getExtras();
-
                 LinearLayoutManager linearLayoutManager = new LinearLayoutManager(context);
                 recyclerView.setLayoutManager(linearLayoutManager);
                 recyclerView.addOnScrollListener(new EndlessRecyclerViewScrollListener(linearLayoutManager) {
@@ -184,7 +183,6 @@ public class OrderFragment extends Fragment implements OnDatabaseChanged {
             @Override
             public void done(List<Orders> objects, ParseException e) {
                 if (e == null) {
-                    Log.d(getClass().getName(),"Here its added");
                     mOrderRecyclerViewAdapter.updateDataSet(objects);
                 } else
                     Toast.makeText(getActivity().getApplicationContext(), "exception " + e.getMessage(), Toast.LENGTH_LONG).show();
