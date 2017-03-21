@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
@@ -59,7 +58,6 @@ public class ViewOrder extends AppCompatActivity implements OnImageListFragmentI
 
         mWorker = (EditText) findViewById(R.id.worker_value);
         mWorker.setText(mOrder.getWorkerName());
-        Log.d(getClass().getName(),mOrder.getStatus().toString()+"  "+Status.ORDER_RECEIVED.toString());
         if(!mOrder.getStatus().toString().equals(Status.ORDER_RECEIVED.toString())) {
             mWorker.setEnabled(false);
         }

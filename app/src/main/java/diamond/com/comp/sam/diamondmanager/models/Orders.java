@@ -51,7 +51,7 @@ public class Orders extends ParseObject {
     }
 
     public void setStatus(String status) {
-        put(STATUS, status.toString());
+        put(STATUS, status);
     }
 
     public Status getStatus() {
@@ -62,7 +62,7 @@ public class Orders extends ParseObject {
             return Status.WORKER_RECEIVED;
         } else if (status.equals(Status.ORDER_RECEIVED.toString())) {
             return Status.ORDER_RECEIVED;
-        } else if (status.equals(Status.CLIENT_DELIVERED)) {
+        } else if (status.equals(Status.CLIENT_DELIVERED.toString())) {
             return Status.CLIENT_DELIVERED;
         } else {
             return Status.READY;
